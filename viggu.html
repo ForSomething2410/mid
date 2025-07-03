@@ -103,32 +103,67 @@
         </tr>
       </thead>
       <tbody id="tb">
-        <tr>
-          <td>alpha.pdf</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>beta.docx</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>gamma.xls</td>
-          <td>15</td>
-        </tr>
+        <tr><td>DCET Hall Ticket (2024/2025)</td><td>1</td></tr>
+        <tr><td>DCET Application (2024/2025)</td><td>1</td></tr>
+        <tr><td>Diploma 1 to 6 sem marks card</td><td>2</td></tr>
+        <tr><td>Vignesh Caste Certificate</td><td>3</td></tr>
+        <tr><td>Vignesh Income Certificate</td><td>3</td></tr>
+        <tr><td>Vanitha Caste Certificate</td><td>3</td></tr>
+        <tr><td>Vadimama Caste Certificate</td><td>3</td></tr>
+        <tr><td>Vignesh SSLC marks card</td><td>4</td></tr>
+        <tr><td>Vignesh SSLC hall ticket</td><td>4</td></tr>
+        <tr><td>Vignesh Diploma PDC</td><td>5</td></tr>
+        <tr><td>Vignesh Dasaraj Aadhaar card</td><td>6</td></tr>
+        <tr><td>Ration card (Kannamma)</td><td>6</td></tr>
+        <tr><td>Vignesh PAN card</td><td>7</td></tr>
+        <tr><td>Vignesh Class 3 to 8 Dikalathi</td><td>8</td></tr>
+        <tr><td>Vignesh Study Certificate 3-10 + Diploma</td><td>9</td></tr>
+        <tr><td>Vignesh Kannada medium Certificate 3-10</td><td>10</td></tr>
+        <tr><td>Vanitha marriage and death CRT</td><td>11</td></tr>
+        <tr><td>Vignesh UKG + 4th standard marks card</td><td>12</td></tr>
+        <tr><td>Vanitha, Dhanraj family tree</td><td>13</td></tr>
+        <tr><td>Tayamma family tree</td><td>14</td></tr>
+        <tr><td>Mr. Dhanraj sir KEA letter (Vignesh)</td><td>14</td></tr>
+        <tr><td>Vignesh blood group CRT</td><td>14</td></tr>
+        <tr><td>Vignesh Dip. marks card by MIT (micro print)</td><td>15</td></tr>
+        <tr><td>Vignesh Dip Admission card</td><td>15</td></tr>
+        <tr><td>Vignesh Dip. Movies card</td><td>15</td></tr>
+        <tr><td>Vignesh blood group CRT</td><td>15</td></tr>
+        <tr><td>Vignesh SC/ST Dip. prize money application</td><td>15</td></tr>
+        <tr><td>Vignesh Dip application form</td><td>15</td></tr>
+        <tr><td>Vignesh 2nd scholarship application</td><td>15</td></tr>
+        <tr><td>Vignesh Monology exam hall ticket</td><td>16</td></tr>
+        <tr><td>Jaythi 7th std. TC</td><td>16</td></tr>
+        <tr><td>Vignesh 7,5,10 TC</td><td>16</td></tr>
+        <tr><td>Vignesh DCET 2024/2025 Document Verification slip</td><td>17</td></tr>
+        <tr><td>Vignesh DCET 2025 Document Appointment Slip</td><td>17</td></tr>
+        <tr><td>Vignesh IOB Bank passbook XEROX</td><td>18</td></tr>
+        <tr><td>Vignesh Diploma 1-3 year fees and Blue Cross and Club receipt</td><td>18</td></tr>
+        <tr><td>Vignesh DCET 2024-25 Question paper and answer copy</td><td>19</td></tr>
+        <tr><td>Vignesh Diploma Internship CRT (English)</td><td>20</td></tr>
+        <tr><td>Vignesh Prathiba Karanji Prize CRT</td><td>21</td></tr>
+        <tr><td>Vignesh Vanitha JSS Hospital Discharge CRT</td><td>21</td></tr>
+        <tr><td>Vignesh DCET 2024 Rank Sheet</td><td>1</td></tr>
       </tbody>
     </table>
   </div>
 
   <script>
-    const s = document.getElementById('s');
-    const tb = document.getElementById('tb');
-    s.addEventListener('input', () => {
-      const v = s.value.toLowerCase();
-      [...tb.rows].forEach(r => {
-        const t = r.cells[0].textContent.toLowerCase();
-        r.style.display = t.includes(v) ? '' : 'none';
-      });
-    });
+  const s = document.getElementById('s');
+  const tb = document.getElementById('tb');
+  
+  s.addEventListener('input', () => {
+  const v = s.value.trim().toLowerCase().replace(/\s+/g, ' ');
+  const keywords = v.split(' ');
+  
+  [...tb.rows].forEach(r => {
+  const rowText = [...r.cells].map(c => c.textContent.toLowerCase()).join(' ');
+  const normalizedRow = rowText.replace(/\s+/g, ' ');
+  
+  const match = keywords.every(word => normalizedRow.includes(word));
+  r.style.display = match ? '' : 'none';
+  });
+  });
   </script>
 </body>
 </html>
