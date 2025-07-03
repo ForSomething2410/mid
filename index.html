@@ -4,77 +4,98 @@
   <title> mid </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  body{
+  body {  
+  background-image: url('backlib.png');
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+  }  
+  body{  
+  background-color:black;  
+  color:white;
+  font-family:'courier new';  
+  }  
+  img{  
+  height:auto;  
+  max-width:30%; 
+  background:black;
+  opacity:0.55;
+  border-radius:12px;
+  }  
+  h2{  
+  color:black;  
+  text-align:left;  
+  opacity:0.55;
+  }  
+  .hcon {  
+  display: flex;  
+  flex-direction:column;  
+  justify-content:space-around;  
+  align-items:left;  
+  height:350px;  
+  overflow-y:auto;  
+  gap:10px;  
+  overflow-y:auto;
+  }  
+  
+  i{  
+  color:rgba(255,255,255,0.5);  
+  }  
+  .car {  
+  width:fit-content;   
+  display: flex;  
+  justify-content:left;  
+  align-items:left;  
+  position: relative;  
+  transition: all 0.5s ease;  
+  margin-left:20px;
+  perspective: 100px;
+  transform:rotateY(50deg);
+  background:blur(12px);
   background-color:black;
   color:white;
-  }
-  img{
-  height:auto;
-  max-width:30%;
-  }
-  h2{
-  color:rgba(255,255,255,0.5);
-  text-align:center;
-  }
-  .hcon {
-  display: flex;
-  flex-direction:column;
-  justify-content:space-around;
-  align-items: center;
-  
-  gap:20px;
-  background: #000;
+  border-radius:12px;
+  opacity:0.55;
   }
   
-  i{
-  color:rgba(255,255,255,0.5);
-  }
-  .car {
-  width: 300px;
-  height: 100px;
-  background: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 0.5s ease;
-  }
-  
-  .car h2 {
-  color: rgba(255,255,255,0.7);
-  font-size: 1.2rem;
-  position: relative;
+  .car h2 {   
+  color:white;
+  font-size: 1.4rem;  
+  position: relative;  
   z-index: 2;
-  }
+  opacity:1;
+  margin:3px;
+  padding:6px;
+  font-weight:bold;
+  perspective: 100px;
+  trasform:rotateY(45deg);
   
-  
-  
-  .car:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255,255,255,0.9);
-  }
+  }  
   </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
-<img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
-<h2> Viggu & Family's Doc List</h2>
-
-<div class="hcon">
-
-    <div onclick="location.href='viggu.html'" class="car">
-      <h2> Viggu </h2>
-      
-    </div>
-    
-    <div onclick="location.href='#'" class="car">
-    <h2> .... </h2>
-    
-    </div>
-    
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <body>
+  <img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
+  <h2> Viggu & Family's Doc List</h2>
+  
+  <div class="hcon">
+  <div onclick="location.href='viggu.html'" class="car">
+  <h2> Vignesh </h2>
+  </div>
+  <div onclick="location.href='#'" class="car">
+  <h2> Vijay</h2>
+  </div>
+  <div onclick="location.href='#'" class="car">
+  <h2> Charan</h2>
+  </div>
+  <div onclick="location.href='#'" class="car">
+  <h2> Kannamma </h2>
   </div>
   
-</body>
+  
+  
+  </div>
+  </body>
 </html>
