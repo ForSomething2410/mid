@@ -1,0 +1,181 @@
+<html>
+<head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mdoc</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #111827;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      max-width: 300px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .search-box {
+      margin-top: 15px;
+    }
+
+    .search-box input {
+      padding: 10px 15px;
+      width: 80vw;
+      max-width: 400px;
+      background-color: #1f2937;
+      border: 1px solid #374151;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .table-container {
+      width: 100%;
+      max-width: 800px;
+      background-color: #1f2937;
+      border-radius: 8px;
+      overflow-x: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #374151;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    tbody tr {
+      border-top: 1px solid #4b5563;
+    }
+
+    @media (max-width: 600px) {
+      .search-box input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microdoc.png" alt="Logo">
+    <div class="search-box">
+      <input id="s" type="text" placeholder="Search...">
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th> File Name</th>
+          <th> Envelop</th>
+        </tr>
+      </thead>
+      <tbody id="tb">
+        <tr><td>    kannamma caste certificate   </td> <td>  2   </td></tr>
+        <tr><td>    kannamma income certificate    </td> <td>  2  </td></tr>
+        <tr><td>    charan aadhar card   </td> <td>  3   </td></tr>
+        <tr><td>    kannamma  aadhar card   </td> <td>  3   </td></tr>
+        <tr><td>    nagesh aadhar card    </td> <td>  3  </td></tr>
+        <tr><td>    charan caste certificate   </td> <td>  4  </td></tr>
+        <tr><td>    charan income certificate    </td> <td>  4   </td></tr>
+        <tr><td>    Ration card   </td> <td>  5   </td></tr>
+        <tr><td>    Scholarship application   </td> <td>  6   </td></tr>
+        <tr><td>    2023 drawing prize certificate    </td> <td>  7 </td></tr>
+        <tr><td>    charan 2022-23 prathiba karanji    </td> <td>  7  </td></tr>
+        <tr><td>    5th marks card   </td> <td>  8 </td></tr>
+        <tr><td>    7th marks card    </td> <td>  8   </td></tr>
+        <tr><td>    hall ticket    </td> <td>  9  </td></tr>
+        <tr><td>    jnanamrutha accedamy    </td> <td>  9  </td></tr>
+        <tr><td>    Charan 6th group photo   </td> <td>  10  </td></tr>
+        <tr><td>    Charan 7th group photo   </td> <td>  10   </td></tr>
+        <tr><td>    pan orginal card  </td> <td>  last   </td></tr>
+        <tr><td>    janalaksmi card    </td> <td>  last    </td></tr>
+        <tr><td>    jana small finace bank  </td> <td>  last    </td></tr>
+        <tr><td>    Hp gas    </td> <td>  last   </td></tr>
+        <tr><td>    charan bank passbook orginal   </td> <td>  0  </td></tr>
+        <tr><td>    kannamma bank passbook orginal   </td> <td>  0   </td></tr>
+        <tr><td>    Charan aadhar orginal   </td> <td>  front  </td></tr>
+        <tr><td>    kannamma aadhar orginal   </td> <td>  front   </td></tr>
+        <tr><td>    passport photo  </td> <td>  front   </td></tr>
+        <tr><td>    voter id card    </td> <td>  front  </td></tr>
+        <tr><td>    Rtc uttalli    </td> <td>  2  </td></tr>
+        <tr><td>    Rtc galipura   </td> <td>  3   </td></tr>
+        <tr><td>    kandaya uttalli    </td> <td>  4  </td></tr>
+        <tr><td>    kandaya galipura </td> <td>  4  </td></tr>
+        <tr><td>    Daarakastu uttalli    </td> <td>  5   </td></tr>
+        <tr><td>    current bill   </td> <td>  6  </td></tr>
+        <tr><td>    Drudikarana patra mandya / mogaralli     </td> <td>  7 </td></tr>
+        <tr><td>    land date slip uttalli   </td> <td>  8   </td></tr>
+        <tr><td>    jothi death certificate     </td> <td>  9 </td></tr>
+        <tr><td>    kannamma family tree   </td> <td>  9   </td></tr>
+        <tr><td>    land JCB expencess  </td> <td>  10   </td></tr>
+        <tr><td>    PM kisan aadhar slip    </td> <td>  11   </td></tr>
+        <tr><td>    water bill book    </td> <td>  12  </td></tr>
+        <tr><td>    L&T receipt    </td> <td>  13  </td></tr>
+        <tr><td>    kannamma eye test     </td> <td>  14   </td></tr>
+        <tr><td>    anitha post office book     </td> <td>  15   </td></tr>
+        <tr><td>    anitha jss discharge card    </td> <td>  15   </td></tr>
+        <tr><td>    uttalli patra    </td> <td>  16   </td></tr>
+        <tr><td>    galipura patra   </td> <td>  17   </td></tr>
+        <tr><td>    charan family photo   </td> <td>  18   </td></tr>
+        <tr><td>    kannamma family photo   </td> <td>  18  </td></tr>
+        <tr><td>    uttalli RTC orginal  </td> <td>  19  </td></tr>
+        <tr><td>    uttalli daarakastu   </td> <td>  19   </td></tr>
+        <tr><td>    vanitha money purse    </td> <td>  20  </td></tr>
+        <tr><td>    vanitha current bill   </td> <td>  20   </td></tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+  const s = document.getElementById('s');
+  const tb = document.getElementById('tb');
+  
+  s.addEventListener('input', () => {
+  const v = s.value.trim().toLowerCase().replace(/\s+/g, ' ');
+  const keywords = v.split(' ');
+  
+  [...tb.rows].forEach(r => {
+  const rowText = [...r.cells].map(c => c.textContent.toLowerCase()).join(' ');
+  const normalizedRow = rowText.replace(/\s+/g, ' ');
+  
+  const match = keywords.every(word => normalizedRow.includes(word));
+  r.style.display = match ? '' : 'none';
+  });
+  });
+  </script>
+</body>
+</html>
